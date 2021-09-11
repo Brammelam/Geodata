@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  .demo {
+    background-color: #F6F6F6;
+  }
+  .demo:hover {
+    background-color: #F0F0F0;
+  }
+
+</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+<script src="https://kit.fontawesome.com/25d83bfaae.js" crossorigin="anonymous"></script>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+<title>Client Locator - Search Client</title>
+</head>
+<body>
+  <div class="container my-3">
+    <h1 class="display-4 text-center">
+      <i class="fab fa-black-tie"></i> Search Client</h1>
+
+
+
+
+
+      <form id="store-form" class="mb-4">
+
+        <div class="form-group">
+
+          <input type="text" id="store-name" class="form-control">
+        </div>
+        <button type="Search" class="btn btn-primary">Search</button>
+        <a href="index.html" class="btn btn-secondary">Back</a>
+      </form>
+    </div>
+    <div class="container my-3" id="demo">
+
+    </div>
+<script src="js/search.js"></script>
+  </body>
+
+  </html>
