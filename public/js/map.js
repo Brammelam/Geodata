@@ -20,7 +20,7 @@ async function getClients() {
          },
          properties: {
            name: client.name,
-           icon: "shop"
+           icon: 'shop'
    }
     }
   });
@@ -28,7 +28,7 @@ async function getClients() {
 }
 
 // Load map with stores
-function loadMap(clients) {
+async function loadMap(clients) {
   map.on('load', () => {
     // Load an image from an external URL.
     map.addLayer({
@@ -42,12 +42,15 @@ function loadMap(clients) {
         }
       },
       layout: {
-        "icon-image": "{icon}-15",
+        "icon-image": '{icon}-15',
         "icon-size": 1.5,
         "text-field": "{name}",
         "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
         "text-offset": [0, 0.9],
-        "text-anchor": "top"
+        "text-anchor": "top",
+        'text-allow-overlap': true,
+
+        'text-size': 12,
       }
     });
   });
