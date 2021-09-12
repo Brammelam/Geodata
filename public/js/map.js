@@ -50,7 +50,7 @@ async function loadMap(clients) {
         "text-anchor": "top",
         'text-allow-overlap': true,
 
-        'text-size': 12,
+        'text-size': 16,
       }
     });
   });

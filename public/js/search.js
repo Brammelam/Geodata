@@ -2,6 +2,7 @@ const storeForm = document.getElementById("store-form");
 const storeAdd = document.getElementById("store-add");
 const storeName = document.getElementById("store-name");
 
+// Define a placeholder for the new entry
 let sendBody = {
   _id_: null,
   name: null,
@@ -10,9 +11,10 @@ let sendBody = {
 
 };
 
+// Define placeholder for search results
 let testArray = [];
 
-// Send POST to API to add store
+// Send POST to API to fetch results
 async function searchClient(e) {
   e.preventDefault();
 
@@ -57,6 +59,7 @@ async function searchClient(e) {
     }
   }
 
+// Send POST with selected result to API
 async function myFunction2(clicked_id) {
     try {
       console.log(testArray[clicked_id]);
